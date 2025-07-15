@@ -2,6 +2,10 @@
   "name": "latex-non-academic-word-check",
   "displayName": "latex-non-academic-word-check",
   "publisher": "Jun",
+  "repository": {
+    "url": "https://github.com/youyinnn/latex-non-academic-word-check",
+    "type": "extension"
+  },
   "description": "",
   "version": "0.0.1",
   "engines": {
