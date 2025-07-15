@@ -418,18 +418,18 @@
       //   "suggestion": "Omit it and rewrite the sentence to remove it.",
       //   "example": "<we> ->"
       // },
-      "they": {
-        "suggestion": "Omit it and rewrite the sentence to remove it.",
-        "example": "<they> ->"
-      },
-      "their": {
-        "suggestion": "Omit it and rewrite the sentence to remove it.",
-        "example": "<their> ->"
-      },
-      "them": {
-        "suggestion": "Omit it and rewrite the sentence to remove it.",
-        "example": "<them> ->"
-      },
+      // "they": {
+      //   "suggestion": "Omit it and rewrite the sentence to remove it.",
+      //   "example": "<they> ->"
+      // },
+      // "their": {
+      //   "suggestion": "Omit it and rewrite the sentence to remove it.",
+      //   "example": "<their> ->"
+      // },
+      // "them": {
+      //   "suggestion": "Omit it and rewrite the sentence to remove it.",
+      //   "example": "<them> ->"
+      // },
       // "it": {
       //   "suggestion": "Omit it and rewrite the sentence to remove it.",
       //   "example": "<it> ->"

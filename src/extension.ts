@@ -13,8 +13,17 @@ type Category = {
 };
 type Categories = { [category: string]: Category };
 
+const dismissedWarnings = new Set<string>();
+function makeWarningKey(uri: vscode.Uri, range: vscode.Range, word: string) {
+  return `${uri.toString()}#${range.start.line}:${
+    range.start.character
+  }-${word}`;
+}
+
 function isCategories(obj: unknown): obj is Categories {
-  if (typeof obj !== "object" || obj === null) return false;
+  if (typeof obj !== "object" || obj === null) {
+    return false;
+  }
   for (const key in obj as object) {
     const cat = (obj as any)[key];
     if (
@@ -80,7 +89,11 @@ export function activate(context: vscode.ExtensionContext) {
           const startPos = document.positionAt(match.index);
           const endPos = document.positionAt(match.index + match[0].length);
           const range = new vscode.Range(startPos, endPos);
-          // const message = `[${category}]\n${desc}\n推荐替换: ${suggestion}\n例句: ${example}`;
+          const key = makeWarningKey(document.uri, range, word);
+          // dismiss
+          if (dismissedWarnings.has(key)) {
+            continue;
+          }
           const message = `Avoid \"${word}\"\n\nSuggestion: ${suggestion}\n\nIn Category: [${category}]\n${desc}\n\nExample: ${example}`;
 
           const diagnostic = new vscode.Diagnostic(
@@ -88,6 +101,7 @@ export function activate(context: vscode.ExtensionContext) {
             message,
             vscode.DiagnosticSeverity.Warning
           );
+          diagnostic.source = "tex-keyword";
           diagnostics.push(diagnostic);
         }
       }
@@ -97,7 +111,9 @@ export function activate(context: vscode.ExtensionContext) {
 
   // 检查当前激活文档
   function updateDiagnostics(editor: vscode.TextEditor | undefined) {
-    if (!editor || !editor.document.fileName.endsWith(".tex")) return;
+    if (!editor || !editor.document.fileName.endsWith(".tex")) {
+      return;
+    }
     const diagnostics = checkDocument(editor.document, categories);
     diagnosticCollection.set(editor.document.uri, diagnostics);
   }
@@ -157,6 +173,66 @@ export function activate(context: vscode.ExtensionContext) {
       checkAllTexFiles
     )
   );
+
+  class DismissWarningProvider implements vscode.CodeActionProvider {
+    provideCodeActions(
+      document: vscode.TextDocument,
+      range: vscode.Range,
+      context: vscode.CodeActionContext,
+      token: vscode.CancellationToken
+    ) {
+      const actions: vscode.CodeAction[] = [];
+      for (const diagnostic of context.diagnostics) {
+        if (diagnostic.source === "tex-keyword") {
+          const word = getWordAtRange(document, diagnostic.range);
+          const key = makeWarningKey(document.uri, diagnostic.range, word);
+          const action = new vscode.CodeAction(
+            "Dismiss this warning",
+            vscode.CodeActionKind.QuickFix
+          );
+          action.command = {
+            title: "Dismiss warning",
+            command: "extension.dismissWarning",
+            arguments: [key],
+          };
+          action.diagnostics = [diagnostic];
+          action.isPreferred = true;
+          actions.push(action);
+        }
+      }
+      return actions;
+    }
+  }
+
+  // 注册 Dismiss 命令
+  context.subscriptions.push(
+    vscode.commands.registerCommand(
+      "extension.dismissWarning",
+      (key: string) => {
+        dismissedWarnings.add(key);
+        if (vscode.window.activeTextEditor) {
+          updateDiagnostics(vscode.window.activeTextEditor);
+        }
+      }
+    )
+  );
+
+  // 注册 CodeActionProvider
+  context.subscriptions.push(
+    vscode.languages.registerCodeActionsProvider(
+      { scheme: "file", language: "latex" },
+      new DismissWarningProvider(),
+      { providedCodeActionKinds: [vscode.CodeActionKind.QuickFix] }
+    )
+  );
+
+  // CodeActionProvider 实现
+  function getWordAtRange(
+    document: vscode.TextDocument,
+    range: vscode.Range
+  ): string {
+    return document.getText(range);
+  }
 }
 
 export function deactivate() {}
