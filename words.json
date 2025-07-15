@@ -1,0 +1,105 @@
+{
+  "Informal": {
+    "desc": "Informal or conversational words that should be replaced with formal alternatives.",
+    "words": {
+      "bad": "poor, negative",
+      "good": "optimal, strong, prime"
+    }
+  },
+  "Vague Quantity": {
+    "desc": "Words that do not specify exact amounts and should be replaced with precise terms.",
+    "words": {
+      "a lot of": "many, several, a great number of, significant, or numerous",
+      "a bit": "Specify the exact amount."
+    }
+  },
+  "Vague Writing": {
+    "desc": "Academic writing should be as precise as possible. Unambiguous language strengthens papers, while vague wording leaves too much to a reader’s interpretation. Whenever possible, prefer exact values—percentages, measurements, statistics—to broader terms. Here are some imprecise words to avoid in academic writing.",
+    "words": {
+      "a bit": "Specify the exact amount.",
+      "a couple of": "Specify the exact amount or replace with many, several, a number of.",
+      "some": "Specify the exact amount or replace with many, several, a number of.",
+      "a lot of": "Specify the exact amount or replace with many, several, a great number of, significant, or numerous.",
+      "lots of": "Specify the exact amount or replace with many, several, a great number of, significant, or numerous.",
+      "a ton": "Specify the exact amount or replace with many, several, a great number of, a substantial amount of, or significant.",
+      "and so on": "Either finish the thought, eliminate the phrase, or replace with a more specific phrase like including other factors or additionally.",
+      "anything": "Specify the item(s).",
+      "something": "Specify the item(s).",
+      "nice": "Specify the quality.",
+      "most": "Specify the amount or replace with many or the majority of.",
+      "stuff": "Specify the item(s), or replace with object, sample, point, or finding.",
+      "thing": "Specify the item(s), or replace with object, sample, point, or finding."
+    }
+  },
+  "Exaggerations": {
+    "desc": "Academic writing should allow for reasonable doubt. While academic writers can be confident, they must acknowledge that their ideas and theories may be disproven. Avoid language that suggests absolute authority or knowledge. Superlatives, such as largest and best, should be used only if they refer to provable facts (for example, describing a company as the largest in Europe) or if the writer is quoting another source (for example, saying that Rolling Stone ranked a certain recording as the best single of 2018).",
+    "words": {
+      "always": "Specify the amount or replace with the word frequently.",
+      "definitely": "Eliminate or replace with greatly, likely, significantly, or strongly.",
+      "absolutely": "Eliminate or replace with greatly, likely, significantly, or strongly.",
+      "every": "Specify the amount or add a phrase to convey reasonable doubt, such as almost, essentially, or recorded.",
+      "never": "Specify the amount or replace with the word rarely.",
+      "none": "Specify the amount or add a phrase to convey reasonable doubt, such as almost, essentially, or recorded.",
+      "proves": "supports",
+      "proof": "supports"
+    }
+  },
+  "Subjectivity": {
+    "desc": "In academic writing, arguments must be supported by evidence. Avoid words that imply conclusions based on the writer’s personal opinions; use objective language to support the main argument. Here are some subjective words to avoid in academic writing.",
+    "words": {
+      "beautiful": "Specify the quality as objectively as possible.",
+      "wonderful": "Specify the quality as objectively as possible.",
+      "awful": "Specify the quality as objectively as possible.",
+      "ugly": "Specify the quality as objectively as possible.",
+      "hideous": "Specify the quality as objectively as possible.",
+      "better": "Replace with a more objective word or phrase.",
+      "clearly": "Eliminate or replace with a more objective word.",
+      "naturally": "Eliminate or replace with a more objective word.",
+      "of course": "Eliminate or replace with a more objective word.",
+      "obviously": "Eliminate or replace with a more objective word.",
+      "undoubtedly": "Eliminate or replace with a more objective word.",
+      "perfect": "Replace with a more specific qualifier or the words strong, key, or crucial.",
+      "ideal": "Replace with a more specific qualifier or the words strong, key, or crucial.",
+      "best": "Replace with a more specific qualifier or the words strong, key, or crucial.",
+      "should": "Explain the rationale behind the recommendation."
+    }
+  },
+  "Clichés and Colloquialisms": {
+    "desc": "Clichés are overused expressions, while colloquialisms are those patterns of expression typical of informal speech. Besides making a paper appear too informal or conversational, they suggest that the writer doesn’t have a clear idea of what she’s trying to say. Replacing such phrases with more precise language will help improve the tone of your writing. Here are some clichés that are best avoided in academic writing.",
+    "words": {
+      "a happy medium": "a compromise",
+      "a stumbling block": "an obstacle",
+      "above board": "legitimate",
+      "at the end of the day": "ultimately or in conclusion",
+      "when all is said and done": "ultimately or in conclusion",
+      "get through": "Replace with a more specific verb or use endure or survive.",
+      "in this day and age": "Specify the time period or use currently, presently, or today.",
+      "in recent years": "Specify the time period or use currently, presently, or today.",
+      "think outside the box": "Specify the idea or replace with words like creative and innovative."
+    }
+  },
+  "Fillers": {
+    "desc": "Some words or phrases are superfluous in academic writing, and sentences tend to be stronger when they are removed. These filler words are best avoided in academic writing.",
+    "words": {
+      "literally": "Eliminate entirely unless you mean ‘in a literal manner.’",
+      "really": "Eliminate or specify the quality.",
+      "too": "Eliminate or specify the quality.",
+      "serves to": "Eliminate entirely.",
+      "helps to": "Eliminate entirely.",
+      "so": "Eliminate entirely or replace with a more specific word.",
+      "very": "Eliminate the word or replace with important, crucial, critical, significant, key.",
+      "extremely": "Eliminate the word or replace with important, crucial, critical, significant, key."
+    }
+  },
+  "First or second person": {
+    "desc": "The first person (I/we/my/our) is not always deemed acceptable in academic papers. Given that opinions differ on this point, always consult the style guide used in your field; while you may be able to use the first person in certain sections, others may require the third person or passive language.\n\nIn contrast, the second person (you/your) is almost never used in academic writing, though it may be appropriate in creative writing or personal communication. Remember that the second person also includes commands, such as add 10 ml to the solution. In most cases, the best way to avoid the second person is to restructure the sentence.",
+    "words": {
+      "I": "Replace with a third-person actor (the researcher, the writer) or rewrite the sentence passively.",
+      "we": "Replace with a third-person actor (the researchers, the writers) or rewrite the sentence passively.",
+      "my": "Replace with a third-person actor (the researcher's, the writer's) or rewrite the sentence passively.",
+      "our": "Replace with a third-person actor (the researchers', the writers') or rewrite the sentence passively.",
+      "you": "Restructure the sentence or replace with a neutral term like one or the reader.",
+      "your": "Restructure the sentence or replace with a neutral term like one or the reader."
+    }
+  }
+}
