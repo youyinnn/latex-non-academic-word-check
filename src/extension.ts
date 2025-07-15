@@ -1,26 +1,52 @@
 import * as vscode from "vscode";
 import * as path from "path";
 import * as fs from "fs";
+import * as commentJson from "comment-json";
 
+type WordInfo = {
+  suggestion: string;
+  example: string;
+};
 type Category = {
   desc: string;
-  words: { [word: string]: string };
+  words: { [word: string]: WordInfo };
 };
 type Categories = { [category: string]: Category };
 
+function isCategories(obj: unknown): obj is Categories {
+  if (typeof obj !== "object" || obj === null) return false;
+  for (const key in obj as object) {
+    const cat = (obj as any)[key];
+    if (
+      typeof cat !== "object" ||
+      cat === null ||
+      typeof cat.desc !== "string" ||
+      typeof cat.words !== "object" ||
+      cat.words === null
+    ) {
+      return false;
+    }
+  }
+  return true;
+}
+
 function loadCategories(context: vscode.ExtensionContext): Categories {
-  const keywordsPath = path.join(context.extensionPath, "words.json");
+  const keywordsPath = path.join(context.extensionPath, "keywords.json");
   if (fs.existsSync(keywordsPath)) {
     try {
       const content = fs.readFileSync(keywordsPath, "utf8");
-      return JSON.parse(content);
+      const parsed = commentJson.parse(content);
+      if (isCategories(parsed)) {
+        return parsed;
+      }
+      return {};
     } catch (e) {
-      vscode.window.showErrorMessage("Failed to parse words.json");
+      vscode.window.showErrorMessage("Failed to parse keywords.json");
       return {};
     }
   } else {
     vscode.window.showWarningMessage(
-      "words.json not found in extension directory"
+      "keywords.json not found in extension directory"
     );
     return {};
   }
@@ -32,30 +58,30 @@ export function activate(context: vscode.ExtensionContext) {
   const diagnosticCollection =
     vscode.languages.createDiagnosticCollection("tex-keyword");
 
-  function updateDiagnostics(editor: vscode.TextEditor | undefined) {
-    if (!editor || !editor.document.fileName.endsWith(".tex")) return;
-
-    const text = editor.document.getText();
+  // 检查指定文档内容
+  function checkDocument(
+    document: vscode.TextDocument,
+    categories: Categories
+  ): vscode.Diagnostic[] {
     const diagnostics: vscode.Diagnostic[] = [];
+    const text = document.getText();
 
-    for (const [category, info] of Object.entries(categories)) {
-      const desc = info["desc"];
-      const words = info["words"];
+    for (const [category, catInfo] of Object.entries(categories)) {
+      const desc = catInfo["desc"];
+      const words = catInfo["words"];
 
-      for (const [word, suggestion] of Object.entries(words)) {
-        // 注意：正则要转义特殊字符
+      for (const [word, info] of Object.entries(words)) {
+        const suggestion = info["suggestion"];
+        const example = info["example"];
         const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
         const regEx = new RegExp(`\\b${escapedWord}\\b`, "gi");
         let match;
         while ((match = regEx.exec(text))) {
-          const startPos = editor.document.positionAt(match.index);
-          const endPos = editor.document.positionAt(
-            match.index + match[0].length
-          );
+          const startPos = document.positionAt(match.index);
+          const endPos = document.positionAt(match.index + match[0].length);
           const range = new vscode.Range(startPos, endPos);
-
-          // 构建 warning 内容
-          const message = `[${category}]\n${desc}\n\nSuggestion: ${suggestion}`;
+          // const message = `[${category}]\n${desc}\n推荐替换: ${suggestion}\n例句: ${example}`;
+          const message = `Avoid \"${word}\"\n\nSuggestion: ${suggestion}\n\nIn Category: [${category}]\n${desc}\n\nExample: ${example}`;
 
           const diagnostic = new vscode.Diagnostic(
             range,
@@ -66,11 +92,40 @@ export function activate(context: vscode.ExtensionContext) {
         }
       }
     }
+    return diagnostics;
+  }
 
+  // 检查当前激活文档
+  function updateDiagnostics(editor: vscode.TextEditor | undefined) {
+    if (!editor || !editor.document.fileName.endsWith(".tex")) return;
+    const diagnostics = checkDocument(editor.document, categories);
     diagnosticCollection.set(editor.document.uri, diagnostics);
   }
 
-  // 文件切换、内容变更时更新
+  // 检查所有 tex 文件
+  async function checkAllTexFiles() {
+    // 清空旧 diagnostics
+    diagnosticCollection.clear();
+
+    // 查找所有 tex 文件
+    const files = await vscode.workspace.findFiles("**/*.tex");
+    for (const file of files) {
+      try {
+        const document = await vscode.workspace.openTextDocument(file);
+        const diagnostics = checkDocument(document, categories);
+        diagnosticCollection.set(file, diagnostics);
+      } catch (e) {
+        vscode.window.showWarningMessage(
+          `Failed to check file: ${file.fsPath}`
+        );
+      }
+    }
+    vscode.window.showInformationMessage(
+      `Checked ${files.length} .tex files in the project.`
+    );
+  }
+
+  // 事件绑定
   vscode.window.onDidChangeActiveTextEditor(
     (editor) => updateDiagnostics(editor),
     null,
@@ -89,12 +144,19 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions
   );
 
-  // 启动时更新
   if (vscode.window.activeTextEditor) {
     updateDiagnostics(vscode.window.activeTextEditor);
   }
 
   context.subscriptions.push(diagnosticCollection);
+
+  // 注册命令
+  context.subscriptions.push(
+    vscode.commands.registerCommand(
+      "extension.checkAllTexFiles",
+      checkAllTexFiles
+    )
+  );
 }
 
 export function deactivate() {}

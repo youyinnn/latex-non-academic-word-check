@@ -1,0 +1,772 @@
+{
+  "Informal and Colloquial Expressions": {
+    "desc": "Because academic writing is more formal than other kinds of writing, some words or expressions that may be acceptable in emails, blog posts, or text messages are too informal for academic contexts and may come across as unsophisticated. Here are some informal and colloquial words to avoid in academic writing.",
+    "words": {
+      "America": {
+        "suggestion": "the United States, the US, the USA",
+        "example": "The study focused on <America> -> <the United States>."
+      },
+      "bad": {
+        "suggestion": "poor, negative",
+        "example": "The results were <bad> -> <poor>."
+      },
+      "big": {
+        "suggestion": "large, sizeable, significant",
+        "example": "A <big> -> <significant> amount of evidence supports this theory."
+      },
+      "humongous": {
+        "suggestion": "large, sizeable, significant",
+        "example": "A <humongous> -> <significant> amount of evidence supports this theory."
+      },
+      "huge": {
+        "suggestion": "large, sizeable, significant",
+        "example": "A <huge> -> <significant> amount of evidence supports this theory."
+      },
+      "has got": {
+        "suggestion": "has, must",
+        "example": "The senator said that the government <has got> -> <must> act."
+      },
+      "get": {
+        "suggestion": "receive",
+        "example": "The writer <get> -> <received> a prize for her work."
+      },
+      "got": {
+        "suggestion": "receive",
+        "example": "The writer <got> -> <received> a prize for her work."
+      },
+      "give": {
+        "suggestion": "provide, offer, present",
+        "example": "Table 5.2 <give> -> <provides> evidence to support this conclusion."
+      },
+      "good": {
+        "suggestion": "optimal, strong, prime (or replace with a more descriptive adjective)",
+        "example": "The findings were <good> -> <optimal>."
+      },
+      "kind of": {
+        "suggestion": "somewhat, to some degree, in the category of",
+        "example": "The scholar <kind of> -> <somewhat> agreed."
+      },
+      "sort of": {
+        "suggestion": "somewhat, to some degree, in the category of",
+        "example": "The scholar <sort of> -> <somewhat> agreed."
+      },
+      "till": {
+        "suggestion": "until, to, through",
+        "example": "The study will run from March <till> -> <until> May."
+      },
+      "show": {
+        "suggestion": "demonstrate, reveal, illustrate",
+        "example": "The interviews <showed> -> <revealed> a shared concern over safety."
+      }
+    }
+  },
+  "Vague Writing": {
+    "desc": "Academic writing should be as precise as possible. Unambiguous language strengthens papers, while vague wording leaves too much to a reader’s interpretation. Whenever possible, prefer exact values—percentages, measurements, statistics—to broader terms. Here are some imprecise words to avoid in academic writing.",
+    "words": {
+      "a bit": {
+        "suggestion": "Specify the exact amount.",
+        "example": "The experiment required <a bit> -> <10 mg> of catalyst."
+      },
+      "a couple of": {
+        "suggestion": "Specify the exact amount or replace with many, several, a number of.",
+        "example": "<A couple of> -> <A total of 30> students were surveyed."
+      },
+      "some": {
+        "suggestion": "Specify the exact amount or replace with many, several, a number of.",
+        "example": "<Some> -> <A total of 30> students were surveyed."
+      },
+      "a lot of": {
+        "suggestion": "Specify the exact amount or replace with many, several, a great number of, significant, or numerous.",
+        "example": "The announcement received <a lot of> -> <significant> attention."
+      },
+      "lots of": {
+        "suggestion": "Specify the exact amount or replace with many, several, a great number of, significant, or numerous.",
+        "example": "The announcement received <lots of> -> <significant> attention."
+      },
+      "a ton": {
+        "suggestion": "Specify the exact amount or replace with many, several, a great number of, a substantial amount of, or significant.",
+        "example": "The government spent <a ton> -> <$5 million> on the project."
+      },
+      "and so on": {
+        "suggestion": "Either finish the thought, eliminate the phrase, or replace with a more specific phrase like including other factors or additionally.",
+        "example": "Civil engineers must consider load, terrain, weather <and so on> -> <many other factors> when designing a bridge."
+      },
+      "anything": {
+        "suggestion": "Specify the item(s).",
+        "example": "The writer could be referencing <anything> -> <three separate themes: the narrator’s grief, the uneasy political situation, or death in general.>"
+      },
+      "something": {
+        "suggestion": "Specify the item(s).",
+        "example": "The writer could be referencing <something> -> <three separate themes: the narrator’s grief, the uneasy political situation, or death in general.>"
+      },
+      // "nice": {
+      //   "suggestion": "Specify the quality.",
+      //   "example": "It was a <nice> -> <colourful> painting."
+      // },
+      "most": {
+        "suggestion": "Specify the amount or replace with many or the majority of.",
+        "example": "<Most> -> <Over 95% of> scientists support the measure."
+      },
+      "stuff": {
+        "suggestion": "Specify the item(s), or replace with object, sample, point, or finding.",
+        "example": "The report included <stuff> -> <multiple relevant findings>."
+      },
+      "thing": {
+        "suggestion": "Specify the item(s), or replace with object, sample, point, or finding.",
+        "example": "The report included <thing> -> <multiple relevant findings>."
+      }
+    }
+  },
+  "Exaggerations": {
+    "desc": "Academic writing should allow for reasonable doubt. While academic writers can be confident, they must acknowledge that their ideas and theories may be disproven. Avoid language that suggests absolute authority or knowledge.\n\nSuperlatives, such as largest and best, should be used only if they refer to provable facts (for example, describing a company as the largest in Europe) or if the writer is quoting another source (for example, saying that Rolling Stone ranked a certain recording as the best single of 2018).",
+    "words": {
+      "always": {
+        "suggestion": "Specify the amount or replace with the word frequently.",
+        "example": "<The results were always the same.> ->The results were <the same over 120 iterations>."
+      },
+      "definitely": {
+        "suggestion": "Eliminate or replace with greatly, likely, significantly, or strongly.",
+        "example": "The findings <absolutely> -> <significantly> provide significant support for the proposed legislation."
+      },
+      "absolutely": {
+        "suggestion": "Eliminate or replace with greatly, likely, significantly, or strongly.",
+        "example": "The findings <absolutely> -> <significantly> provide significant support for the proposed legislation."
+      },
+      "every": {
+        "suggestion": "Specify the amount or add a phrase to convey reasonable doubt, such as almost, essentially, or recorded.",
+        "example": "<Every> -> <Every recorded> species of this genus is found in the Brazilian Amazon."
+      },
+      "never": {
+        "suggestion": "Specify the amount or replace with the word rarely.",
+        "example": "<Surveyed respondents never chose the fourth option.> -> <None of the 30 surveyed respondents chose the fourth option.>"
+      },
+      "none": {
+        "suggestion": "Specify the amount or add a phrase to convey reasonable doubt, such as almost, essentially, or recorded.",
+        "example": "<None of the respondents answered positively.> -> <No respondents answered positively.>"
+      },
+      "proves": {
+        "suggestion": "supports",
+        "example": "This finding <proves> -> <supports> the hypothesis."
+      },
+      "proof": {
+        "suggestion": "supports",
+        "example": "This finding <proof> -> <supports> the hypothesis."
+      }
+    }
+  },
+  "Subjectivity": {
+    "desc": "In academic writing, arguments must be supported by evidence. Avoid words that imply conclusions based on the writer’s personal opinions; use objective language to support the main argument. Here are some subjective words to avoid in academic writing.",
+    "words": {
+      "beautiful": {
+        "suggestion": "Specify the quality as objectively as possible.",
+        "example": "The building was <beautiful> -> <artfully designed>."
+      },
+      "wonderful": {
+        "suggestion": "Specify the quality as objectively as possible.",
+        "example": "The composition was <wonderful> -> <full of clashing movements>."
+      },
+      "awful": {
+        "suggestion": "Specify the quality as objectively as possible.",
+        "example": "The composition was <awful> -> <full of clashing movements>."
+      },
+      "ugly": {
+        "suggestion": "Specify the quality as objectively as possible.",
+        "example": "The composition was <ugly> -> <full of clashing movements>."
+      },
+      "hideous": {
+        "suggestion": "Specify the quality as objectively as possible.",
+        "example": "The composition was <hideous> -> <full of clashing movements>."
+      },
+      "better": {
+        "suggestion": "Replace with a more objective word or phrase.",
+        "example": "The candidate had a <better> -> <more comprehensive> plan to address climate change than his opponent."
+      },
+      "clearly": {
+        "suggestion": "Eliminate or replace with a more objective word.",
+        "example": "<clearly> -> The programmer wrote the application in Java."
+      },
+      "naturally": {
+        "suggestion": "Eliminate or replace with a more objective word.",
+        "example": "<naturally> -> The programmer wrote the application in Java."
+      },
+      "of course": {
+        "suggestion": "Eliminate or replace with a more objective word.",
+        "example": "<of course> -> After the war, economic policy changed."
+      },
+      "obviously": {
+        "suggestion": "Eliminate or replace with a more objective word.",
+        "example": "<obviously> -> After the war, economic policy changed."
+      },
+      "undoubtedly": {
+        "suggestion": "Eliminate or replace with a more objective word.",
+        "example": "<undoubtedly> -> After the war, economic policy changed."
+      },
+      "perfect": {
+        "suggestion": "Replace with a more specific qualifier or the words strong, key, or crucial.",
+        "example": "The applicant was <perfect> -> <a strong> candidate."
+      },
+      "ideal": {
+        "suggestion": "Replace with a more specific qualifier or the words strong, key, or crucial.",
+        "example": "The applicant was <ideal> -> <a strong> candidate."
+      },
+      "best": {
+        "suggestion": "Replace with a more specific qualifier or the words strong, key, or crucial.",
+        "example": "The applicant was <best> -> <a strong> candidate."
+      },
+      "should": {
+        "suggestion": "Explain the rationale behind the recommendation.",
+        "example": "<should> ->could benefit greatly from studying the protest."
+      }
+    }
+  },
+  "Clichés and Colloquialisms": {
+    "desc": "Clichés are overused expressions, while colloquialisms are those patterns of expression typical of informal speech. Besides making a paper appear too informal or conversational, they suggest that the writer doesn’t have a clear idea of what she’s trying to say. Replacing such phrases with more precise language will help improve the tone of your writing. Here are some clichés that are best avoided in academic writing.",
+    "words": {
+      "a happy medium": {
+        "suggestion": "a compromise",
+        "example": "The two sides reached <a happy medium> -> <a compromise>."
+      },
+      "a stumbling block": {
+        "suggestion": "an obstacle",
+        "example": "The proposal encountered <a stumbling block> -> <an obstacle> when the opposing party mounted a negative press campaign."
+      },
+      "above board": {
+        "suggestion": "legitimate",
+        "example": "Unlike previous proposals, the resolution was <above board> -> <legitimate>."
+      },
+      "at the end of the day": {
+        "suggestion": "ultimately or in conclusion",
+        "example": "<At the end of the day> -> <Ultimately>, the new law did not impact the rural population."
+      },
+      "when all is said and done": {
+        "suggestion": "ultimately or in conclusion",
+        "example": "<When all is said and done> -> <Ultimately>, the new law did not impact the rural population."
+      },
+      "get through": {
+        "suggestion": "Replace with a more specific verb or use endure or survive.",
+        "example": "The researcher had to <get through> -> <read> multiple texts."
+      },
+      "in this day and age": {
+        "suggestion": "Specify the time period or use currently, presently, or today.",
+        "example": "<In this day and age> -> <In the past decade>, social media use has become prevalent amongst millennials."
+      },
+      "in recent years": {
+        "suggestion": "Specify the time period or use currently, presently, or today.",
+        "example": "<In recent years> -> <In the past decade>, social media use has become prevalent amongst millennials."
+      },
+      "think outside the box": {
+        "suggestion": "Specify the idea or replace with words like creative and innovative.",
+        "example": "The economist was known to <think outside the box> -> <propose innovative ideas>."
+      }
+    }
+  },
+  "Fillers": {
+    "desc": "Some words or phrases are superfluous in academic writing, and sentences tend to be stronger when they are removed. These filler words are best avoided in academic writing.",
+    "words": {
+      "literally": {
+        "suggestion": "Eliminate entirely unless you mean ‘in a literal manner.’",
+        "example": "The scientist had <literally> -> explored every option."
+      },
+      "really": {
+        "suggestion": "Eliminate or specify the quality.",
+        "example": "The results were <really> -> <highly> revealing."
+      },
+      "too": {
+        "suggestion": "Eliminate or specify the quality.",
+        "example": "The results were <too> -> <highly> revealing."
+      },
+      "serves to": {
+        "suggestion": "Eliminate entirely.",
+        "example": "This quote <serves to> -> <illustrates> the author’s primary argument."
+      },
+      "helps to": {
+        "suggestion": "Eliminate entirely.",
+        "example": "This quote <helps to> -> <illustrates> the author’s primary argument."
+      },
+      "so": {
+        "suggestion": "Eliminate entirely or replace with a more specific word.",
+        "example": "The poem is <so> -> <interesting> because it uses an unusual rhyme pattern."
+      },
+      "very": {
+        "suggestion": "Eliminate the word or replace with important, crucial, critical, significant, key.",
+        "example": "Her testimony was <very> -> <crucial>."
+      },
+      "extremely": {
+        "suggestion": "Eliminate the word or replace with important, crucial, critical, significant, key.",
+        "example": "Her testimony was <extremely> -> <crucial>."
+      }
+    }
+  },
+  "First or second person": {
+    "desc": "The first person (I/we/my/our) is not always deemed acceptable in academic papers. Given that opinions differ on this point, always consult the style guide used in your field; while you may be able to use the first person in certain sections, others may require the third person or passive language.\n\nIn contrast, the second person (you/your) is almost never used in academic writing, though it may be appropriate in creative writing or personal communication. Remember that the second person also includes commands, such as add 10 ml to the solution. In most cases, the best way to avoid the second person is to restructure the sentence.",
+    "words": {
+      "we": {
+        "suggestion": "Replace with a third-person actor (the researcher, the writer) or rewrite the sentence passively.",
+        "example": "<We> -> <The researcher> performed a regression analysis."
+      },
+      "my": {
+        "suggestion": "Replace with a third-person actor (the researcher, the writer) or rewrite the sentence passively.",
+        "example": "<My> -> <The researcher's> regression analysis was performed."
+      },
+      "our": {
+        "suggestion": "Replace with a third-person actor (the researcher, the writer) or rewrite the sentence passively.",
+        "example": "<Our> -> <The researcher's> regression analysis was performed."
+      },
+      "you": {
+        "suggestion": "Restructure the sentence or replace with a neutral term like one or the reader.",
+        "example": "<You> -> <One> might think the result unlikely."
+      },
+      "your": {
+        "suggestion": "Restructure the sentence or replace with a neutral term like one or the reader.",
+        "example": "<Your> -> <One's> assessment of the result might differ."
+      }
+    }
+  },
+  "Gendered language": {
+    "desc": "Replace gendered language with gender-neutral alternatives to avoid perpetuating gender bias.",
+    "words": {
+      "man": {
+        "suggestion": "person, people, humanity, humankind",
+        "example": "The wheel is one of <mankind> -> <humanity>'s earliest inventions."
+      },
+      "mankind": {
+        "suggestion": "person, people, humanity, humankind",
+        "example": "The wheel is one of <mankind> -> <humanity>'s earliest inventions."
+      },
+      "-man": {
+        "suggestion": "Replace with gender-neutral words.",
+        "example": "<policeman> -> <police officer>, <congresswoman> -> <congressperson>, <usherette> -> <usher>, <actress> -> <actor>"
+      },
+      "-woman": {
+        "suggestion": "Replace with gender-neutral words.",
+        "example": "<policeman> -> <police officer>, <congresswoman> -> <congressperson>, <usherette> -> <usher>, <actress> -> <actor>"
+      },
+      "-ette": {
+        "suggestion": "Replace with gender-neutral words.",
+        "example": "<usherette> -> <usher>"
+      },
+      "-ess": {
+        "suggestion": "Replace with gender-neutral words.",
+        "example": "<actress> -> <actor>"
+      },
+      "girl": {
+        "suggestion": "Replace with gender-neutral terms.",
+        "example": "The weather <girl> -> <reporter> warned viewers of the approach of a vicious cold snap."
+      },
+      "lady": {
+        "suggestion": "Replace with gender-neutral terms.",
+        "example": "The weather <lady> -> <reporter> warned viewers of the approach of a vicious cold snap."
+      }
+    }
+  },
+  "Miscellaneous-I": {
+    "desc": "Words and expressions that do not fit into other categories but are best avoided in academic writing.",
+    "words": {
+      "me": {
+        "suggestion": "The researcher, the author",
+        "example": "<me> -> <the researcher>"
+      },
+      "myself": {
+        "suggestion": "The researcher, the author",
+        "example": "<myself> -> <the researcher>"
+      },
+      "will": {
+        "suggestion": "Can, does, do, may",
+        "example": "<will> -> <can>"
+      },
+      "also": {
+        "suggestion": "In addition, furthermore, but",
+        "example": "<also> -> <in addition>"
+      },
+      "must": {
+        "suggestion": "Can, should, may",
+        "example": "<must> -> <can>"
+      },
+      "everyone": {
+        "suggestion": "some",
+        "example": "<everyone> -> <some>"
+      },
+      // "that": {
+      //   "suggestion": "which or who works. Omit it.",
+      //   "example": "<that> -> <which>"
+      // },
+      // "which": {
+      //   "suggestion": "who works. Omit it.",
+      //   "example": "<which> -> <who>"
+      // },
+      "who": {
+        "suggestion": "which works. Omit it.",
+        "example": "<who> -> <which>"
+      },
+      "currently": {
+        "suggestion": "Omit it!",
+        "example": "<currently> ->"
+      },
+      "today": {
+        "suggestion": "Omit it!",
+        "example": "<today> ->"
+      },
+      "he": {
+        "suggestion": "Omit it and rewrite the sentence to remove it.",
+        "example": "<he> ->"
+      },
+      "she": {
+        "suggestion": "Omit it and rewrite the sentence to remove it.",
+        "example": "<she> ->"
+      },
+      // "we": {
+      //   "suggestion": "Omit it and rewrite the sentence to remove it.",
+      //   "example": "<we> ->"
+      // },
+      "they": {
+        "suggestion": "Omit it and rewrite the sentence to remove it.",
+        "example": "<they> ->"
+      },
+      "their": {
+        "suggestion": "Omit it and rewrite the sentence to remove it.",
+        "example": "<their> ->"
+      },
+      "them": {
+        "suggestion": "Omit it and rewrite the sentence to remove it.",
+        "example": "<them> ->"
+      },
+      // "it": {
+      //   "suggestion": "Omit it and rewrite the sentence to remove it.",
+      //   "example": "<it> ->"
+      // },
+      // "thus": {
+      //   "suggestion": "Omit it.",
+      //   "example": "<thus> ->"
+      // },
+      // "therefore": {
+      //   "suggestion": "Omit it.",
+      //   "example": "<therefore> ->"
+      // },
+      // "however": {
+      //   "suggestion": "Omit it.",
+      //   "example": "<however> ->"
+      // },
+      "otherwise": {
+        "suggestion": "Omit it.",
+        "example": "<otherwise> ->"
+      },
+      // "this": {
+      //   "suggestion": "Delete it, or follow with a noun",
+      //   "example": "<this> ->"
+      // },
+      "think": {
+        "suggestion": "The research suggests, the data suggest",
+        "example": "<think> -> <the research suggests>"
+      },
+      "feel": {
+        "suggestion": "The research suggests, the data suggest",
+        "example": "<feel> -> <the research suggests>"
+      }
+    }
+  },
+  "Miscellaneous-II": {
+    "desc": "Common informal, vague, or subjective words and expressions that are best avoided in academic writing.",
+    "words": {
+      // "stuff": {
+      //   "suggestion": "object, sample, result, data",
+      //   "example": "The report included <stuff> -> <data>."
+      // },
+      "things": {
+        "suggestion": "factors, issues, aspects",
+        "example": "The study examined several <things> -> <factors>."
+      },
+      // "sort of": {
+      //   "suggestion": "more precise qualifier or specify degree",
+      //   "example": "The result was <sort of> -> <somewhat> surprising."
+      // },
+      // "kind of": {
+      //   "suggestion": "more precise qualifier or specify degree",
+      //   "example": "This is <kind of> -> <somewhat> complex."
+      // },
+      "a bunch of": {
+        "suggestion": "many, several, a group of",
+        "example": "We collected <a bunch of> -> <many> samples."
+      },
+      "tons of": {
+        "suggestion": "a large amount of, numerous",
+        "example": "There are <tons of> -> <numerous> examples."
+      },
+      "lots": {
+        "suggestion": "many, numerous",
+        "example": "<lots> -> <many> of data were collected."
+      },
+      "etc.": {
+        "suggestion": "fully enumerate items or use 'such as...'",
+        "example": "We measured temperature, pressure, <etc.> -> <and humidity>."
+      },
+      "and/or": {
+        "suggestion": "clarify the logic explicitly",
+        "example": "Participants may submit essays <and/or> -> <or> reports."
+      },
+      "basically": {
+        "suggestion": "use more precise language or omit",
+        "example": "<basically> -> <omit>."
+      },
+      "quite": {
+        "suggestion": "use a more precise word",
+        "example": "The result was <quite> -> <significantly> different."
+      },
+      "just": {
+        "suggestion": "omit or use precise language",
+        "example": "<just> -> <omit>."
+      },
+      "a little": {
+        "suggestion": "specify the exact amount",
+        "example": "Add <a little> -> <5 mg> of catalyst."
+      },
+      "a few": {
+        "suggestion": "specify the exact amount",
+        "example": "There were <a few> -> <three> errors."
+      },
+      "maybe": {
+        "suggestion": "use a more precise statement or indicate uncertainty with data",
+        "example": "<maybe> -> <possibly>."
+      },
+      "perhaps": {
+        "suggestion": "use a more precise statement or indicate uncertainty with data",
+        "example": "<perhaps> -> <possibly>."
+      },
+      "a number of": {
+        "suggestion": "specify the exact amount",
+        "example": "<a number of> -> <seven> participants responded."
+      },
+      // "huge": {
+      //   "suggestion": "large, significant, substantial",
+      //   "example": "<huge> -> <significant> improvement was observed."
+      // },
+      "massive": {
+        "suggestion": "large, significant, substantial",
+        "example": "<massive> -> <substantial> increase was detected."
+      },
+      "amazing": {
+        "suggestion": "use more objective language",
+        "example": "The results were <amazing> -> <notable>."
+      },
+      "incredible": {
+        "suggestion": "use more objective language",
+        "example": "The findings are <incredible> -> <remarkable>."
+      },
+      "cool": {
+        "suggestion": "use more formal, objective language",
+        "example": "The solution is <cool> -> <effective>."
+      },
+      "neat": {
+        "suggestion": "use more formal, objective language",
+        "example": "This method is <neat> -> <efficient>."
+      },
+      "awesome": {
+        "suggestion": "use more formal, objective language",
+        "example": "The approach is <awesome> -> <noteworthy>."
+      },
+      // "bad": {
+      //   "suggestion": "poor, suboptimal, inadequate",
+      //   "example": "This is a <bad> -> <poor> result."
+      // },
+      "nice": {
+        "suggestion": "well-defined, robust",
+        "example": "The experiment was <nice> -> <well-designed>."
+      },
+      "super": {
+        "suggestion": "use more precise, objective language",
+        "example": "The effect is <super> -> <very> strong."
+      },
+      "mega": {
+        "suggestion": "use more precise, objective language",
+        "example": "The dataset is <mega> -> <large>."
+      },
+      "a bit": {
+        "suggestion": "specify the exact amount",
+        "example": "The result changed <a bit> -> <by 2%>."
+      },
+      "a lot": {
+        "suggestion": "specify the exact amount",
+        "example": "The temperature increased <a lot> -> <by 20°C>."
+      },
+      "a little bit": {
+        "suggestion": "specify the exact amount",
+        "example": "<a little bit> -> <by 2%>."
+      },
+      "somehow": {
+        "suggestion": "explain the cause or mechanism",
+        "example": "The reaction <somehow> -> <due to unknown factors> failed."
+      },
+      "totally": {
+        "suggestion": "completely, entirely, or omit",
+        "example": "The reaction was <totally> -> <completely> inhibited."
+      },
+      // "always": {
+      //   "suggestion": "use more cautious language such as 'usually', 'typically'",
+      //   "example": "The reaction <always> -> <typically> occurs at room temperature."
+      // },
+      // "never": {
+      //   "suggestion": "use more cautious language such as 'rarely', 'seldom'",
+      //   "example": "This method <never> -> <rarely> fails."
+      // },
+      // "got": {
+      //   "suggestion": "received, obtained, acquired",
+      //   "example": "The researcher <got> -> <received> a grant."
+      // },
+      "gonna": {
+        "suggestion": "going to",
+        "example": "The team is <gonna> -> <going to> analyze the data."
+      },
+      "wanna": {
+        "suggestion": "want to",
+        "example": "Researchers <wanna> -> <want to> explore further."
+      },
+      "okay": {
+        "suggestion": "acceptable, satisfactory, appropriate",
+        "example": "The results are <okay> -> <acceptable>."
+      },
+      "ok": {
+        "suggestion": "acceptable, satisfactory, appropriate",
+        "example": "The results are <ok> -> <acceptable>."
+      },
+      "anyways": {
+        "suggestion": "anyway",
+        "example": "<anyways> -> <anyway>."
+      },
+      "plus": {
+        "suggestion": "in addition, furthermore",
+        "example": "<plus> -> <in addition>."
+      },
+      // "big": {
+      //   "suggestion": "large, significant, major",
+      //   "example": "<big> -> <large> improvement was observed."
+      // },
+      "small": {
+        "suggestion": "minor, negligible, limited",
+        "example": "<small> -> <minor> difference was detected."
+      },
+      "nowadays": {
+        "suggestion": "currently, at present, or specify the time",
+        "example": "<nowadays> -> <currently>."
+      },
+      "kids": {
+        "suggestion": "children, adolescents, young people",
+        "example": "<kids> -> <children> participated in the study."
+      },
+      "guy": {
+        "suggestion": "person, individual",
+        "example": "<guy> -> <individual>."
+      },
+      "guys": {
+        "suggestion": "people, individuals",
+        "example": "<guys> -> <individuals>."
+      },
+      "folks": {
+        "suggestion": "people, individuals",
+        "example": "<folks> -> <people>."
+      },
+      // "clearly": {
+      //   "suggestion": "use more objective, cautious language",
+      //   "example": "<clearly> -> <The data indicate> that this is the case."
+      // },
+      // "obviously": {
+      //   "suggestion": "use more objective, cautious language",
+      //   "example": "<obviously> -> <The results suggest> this outcome."
+      // },
+      // "definitely": {
+      //   "suggestion": "use more objective, cautious language",
+      //   "example": "<definitely> -> <The results strongly indicate>."
+      // },
+      "everyone knows": {
+        "suggestion": "data-supported claim",
+        "example": "<everyone knows> -> <According to Smith (2020), ...>"
+      },
+      "it is obvious that": {
+        "suggestion": "data-supported claim",
+        "example": "<it is obvious that> -> <The results show that...>"
+      },
+      "there is no doubt": {
+        "suggestion": "data-supported claim",
+        "example": "<there is no doubt> -> <The evidence supports>"
+      },
+      "without a doubt": {
+        "suggestion": "data-supported claim",
+        "example": "<without a doubt> -> <The evidence supports>"
+      },
+      "it goes without saying": {
+        "suggestion": "data-supported claim",
+        "example": "<it goes without saying> -> <The results indicate>"
+      },
+      "can't": {
+        "suggestion": "cannot",
+        "example": "<can't> -> <cannot>"
+      },
+      "don't": {
+        "suggestion": "do not",
+        "example": "<don't> -> <do not>"
+      },
+      "won't": {
+        "suggestion": "will not",
+        "example": "<won't> -> <will not>"
+      },
+      "isn't": {
+        "suggestion": "is not",
+        "example": "<isn't> -> <is not>"
+      },
+      "doesn't": {
+        "suggestion": "does not",
+        "example": "<doesn't> -> <does not>"
+      },
+      "ain't": {
+        "suggestion": "is not, are not",
+        "example": "<ain't> -> <is not>"
+      },
+      "gotta": {
+        "suggestion": "have to, must",
+        "example": "<gotta> -> <have to>"
+      },
+      "kinda": {
+        "suggestion": "somewhat",
+        "example": "<kinda> -> <somewhat>"
+      },
+      "sorta": {
+        "suggestion": "somewhat",
+        "example": "<sorta> -> <somewhat>"
+      },
+      "TV": {
+        "suggestion": "television",
+        "example": "<TV> -> <television>"
+      },
+      "info": {
+        "suggestion": "information",
+        "example": "<info> -> <information>"
+      },
+      "pics": {
+        "suggestion": "pictures",
+        "example": "<pics> -> <pictures>"
+      },
+      "LOL": {
+        "suggestion": "omit or use formal language",
+        "example": "<LOL> -> <omit>"
+      },
+      "ASAP": {
+        "suggestion": "as soon as possible",
+        "example": "<ASAP> -> <as soon as possible>"
+      },
+      "FYI": {
+        "suggestion": "for your information",
+        "example": "<FYI> -> <for your information>"
+      },
+      "In conclusion": {
+        "suggestion": "use a more formal summarizing phrase",
+        "example": "<In conclusion> -> <Overall, ...>"
+      },
+      "To sum up": {
+        "suggestion": "use a more formal summarizing phrase",
+        "example": "<To sum up> -> <In summary, ...>"
+      },
+      "As we all know": {
+        "suggestion": "avoid subjective assumptions",
+        "example": "<As we all know> -> <According to research, ...>"
+      }
+    }
+  }
+}
