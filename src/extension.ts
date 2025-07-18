@@ -86,6 +86,13 @@ export function activate(context: vscode.ExtensionContext) {
         const regEx = new RegExp(`\\b${escapedWord}\\b`, "gi");
         let match;
         while ((match = regEx.exec(text))) {
+          const matchPos = match.index;
+
+          if (matchPos > 0 && text[matchPos - 1] === "\\") {
+            // skip latex command
+            continue;
+          }
+
           const startPos = document.positionAt(match.index);
           const endPos = document.positionAt(match.index + match[0].length);
           const range = new vscode.Range(startPos, endPos);

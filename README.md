@@ -15,3 +15,7 @@ Usage:
 Screenshots:
 
 ![s1](./image/s1.png)
+
+# Change Logs
+
+1. 0.3.0: ignore latex command, e.g. `\small`
