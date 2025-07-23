@@ -57,6 +57,10 @@
       "show": {
         "suggestion": "demonstrate, reveal, illustrate",
         "example": "The interviews <showed> -> <revealed> a shared concern over safety."
+      },
+      "shows": {
+        "suggestion": "demonstrates, reveals, illustrates",
+        "example": "-----"
       }
     }
   },
@@ -120,6 +124,10 @@
   "Exaggerations": {
     "desc": "Academic writing should allow for reasonable doubt. While academic writers can be confident, they must acknowledge that their ideas and theories may be disproven. Avoid language that suggests absolute authority or knowledge.\n\nSuperlatives, such as largest and best, should be used only if they refer to provable facts (for example, describing a company as the largest in Europe) or if the writer is quoting another source (for example, saying that Rolling Stone ranked a certain recording as the best single of 2018).",
     "words": {
+      "mostly": {
+        "suggestion": "Specify the amount or replace with many or the majority of.",
+        "example": "--------"
+      },
       "always": {
         "suggestion": "Specify the amount or replace with the word frequently.",
         "example": "<The results were always the same.> ->The results were <the same over 120 iterations>."
